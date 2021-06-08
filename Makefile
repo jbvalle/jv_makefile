@@ -1,5 +1,5 @@
 # -*- Makefile -*-
-all: calc shout
+all: calc shout clean
 
 calc: main.o calc.o
 	gcc main.o calc.o -o calc
@@ -17,4 +17,4 @@ shout.o: shout.c
 	gcc -c shout.c
 
 clean:
-	del *.o
+	rm *.o
