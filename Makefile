@@ -15,3 +15,6 @@ shout: shout.o calc.o
 
 shout.o: shout.c
 	gcc -c shout.c
+
+clean:
+	del *.o
